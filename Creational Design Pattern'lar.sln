@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33815.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-Singleton Design Pattern", "01-Singleton Design Pattern\01-Singleton Design Pattern.csproj", "{0CE0C4E5-2884-4687-BAAB-DD04C0BA9747}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-Singleton Design Pattern - Asp.NET Core", "02-Singleton Design Pattern - Asp.NET Core\02-Singleton Design Pattern - Asp.NET Core.csproj", "{14A4CFB1-F5D5-4E69-AB40-4A0B0AA72E2B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0CE0C4E5-2884-4687-BAAB-DD04C0BA9747}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CE0C4E5-2884-4687-BAAB-DD04C0BA9747}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CE0C4E5-2884-4687-BAAB-DD04C0BA9747}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CE0C4E5-2884-4687-BAAB-DD04C0BA9747}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14A4CFB1-F5D5-4E69-AB40-4A0B0AA72E2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14A4CFB1-F5D5-4E69-AB40-4A0B0AA72E2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14A4CFB1-F5D5-4E69-AB40-4A0B0AA72E2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14A4CFB1-F5D5-4E69-AB40-4A0B0AA72E2B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EF772D23-64D2-4C3B-9435-61FCFD148646}
+	EndGlobalSection
+EndGlobal
