@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04 - Multiton Design Patter
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05-Factory Method Design Pattern - Factory Yöntemi", "05-Factory Method Design Pattern - Factory Yöntemi\05-Factory Method Design Pattern - Factory Yöntemi.csproj", "{B63A10E1-5561-43D7-B653-DD5FDB6C02A6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06-Factory Method Design Pattern  - Factory Method Yöntemi", "06-Factory Method Design Pattern  - Factory Method Yöntemi\06-Factory Method Design Pattern  - Factory Method Yöntemi.csproj", "{A6B9C8C9-28BC-4937-AF15-AEFA4EF92404}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{B63A10E1-5561-43D7-B653-DD5FDB6C02A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B63A10E1-5561-43D7-B653-DD5FDB6C02A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B63A10E1-5561-43D7-B653-DD5FDB6C02A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6B9C8C9-28BC-4937-AF15-AEFA4EF92404}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6B9C8C9-28BC-4937-AF15-AEFA4EF92404}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6B9C8C9-28BC-4937-AF15-AEFA4EF92404}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6B9C8C9-28BC-4937-AF15-AEFA4EF92404}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

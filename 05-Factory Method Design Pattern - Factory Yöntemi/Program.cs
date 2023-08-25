@@ -15,7 +15,7 @@ gerekmektedir.
  */
 
 
-#region Factory Method Design Pattern - Factory Yöntemi
+#region Factory  Design Pattern - Factory Yöntemi
 
 // A a = new A(); //burada bır problem varr demektir burada ctor un bırsuru parametresı oldugunu dusun burada pek bır malıyet yok sadece sembol olsun dıyerekten söyluyorum bunu 
 
