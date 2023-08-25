@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net7.0</TargetFramework>
-    <RootNamespace>_08_Factory_Method_Design_Pattern___Product_ları_Singleton_Pattern_İle_Tekilleştirme_Örneği</RootNamespace>
+    <RootNamespace>_09_FMDP_Creator_İçerisindeki_Nesne_Bağımlılığını_Ortadan_Kaldırma</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
