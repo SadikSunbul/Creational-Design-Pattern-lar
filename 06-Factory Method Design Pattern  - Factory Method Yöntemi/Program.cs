@@ -1,5 +1,5 @@
 ﻿
-#region Factory Method Design Pattern - Factory Method Yöntemi
+#region Factory Method Design Pattern - Factory Method Yöntemi (Diğerine nazaran bunu kullanmak daha iyi olucaktır diğerinde tek sorumluluga aykırıdır)
 
 while (true)
 {

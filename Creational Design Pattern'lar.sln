@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05-Factory Method Design Pa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06-Factory Method Design Pattern  - Factory Method Yöntemi", "06-Factory Method Design Pattern  - Factory Method Yöntemi\06-Factory Method Design Pattern  - Factory Method Yöntemi.csproj", "{A6B9C8C9-28BC-4937-AF15-AEFA4EF92404}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07-Factory Method Design Pattern - Alt Factory Sınıfları İle Örneklendirme", "07-Factory Method Design Pattern - Alt Factory Sınıfları İle Örneklendirme\07-Factory Method Design Pattern - Alt Factory Sınıfları İle Örneklendirme.csproj", "{31C2D06F-283E-4689-93C9-C039F87EAD41}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{A6B9C8C9-28BC-4937-AF15-AEFA4EF92404}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A6B9C8C9-28BC-4937-AF15-AEFA4EF92404}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A6B9C8C9-28BC-4937-AF15-AEFA4EF92404}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31C2D06F-283E-4689-93C9-C039F87EAD41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31C2D06F-283E-4689-93C9-C039F87EAD41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31C2D06F-283E-4689-93C9-C039F87EAD41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31C2D06F-283E-4689-93C9-C039F87EAD41}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
