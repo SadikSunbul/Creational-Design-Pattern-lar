@@ -1,10 +1,16 @@
 ﻿
 
 //GarantiBank garantiBank = new("asd", "123");
-//garantiBank.ConnectGaranti();
+//garantiBank.ConnectGaranti(); //bu bir kuraldır bunu tetıklememiz lazım kullanabilmek için 
 
 
-//VakifBank vakifBank = new(new() { UserCode = "gncy", Mail = "gncy@gencayyildiz.com" }, "123");
+//VakifBank vakifBank = new(
+//    new()
+//    {
+//        UserCode = "sadik",
+//        Mail = "sadik@sadiksunbul.com"
+//    },
+//    "123");
 //bool result = vakifBank.ValidateCredential();
 //if (result)
 //{
