@@ -20,8 +20,14 @@ gerekmektedir.
 // A a = new A(); //burada bır problem varr demektir burada ctor un bırsuru parametresı oldugunu dusun burada pek bır malıyet yok sadece sembol olsun dıyerekten söyluyorum bunu 
 
 A? a = (A)ProductCreater.GetInstance(ProductType.A); //Nesneye ihtiyaç oldugunda drekt uretmektense isteme işlemi yaptık burada 
+a.Run();
 
+B? b = ProductCreater.GetInstance(ProductType.B) as B;
+b?.Run();
 
+//ihtiyacımızın olan nesneyi olusturmuyoruz istiyoruz 
+//boylece uretım malıyetını kodun yazıldıfı yerde uretım malıyetınden arındırdık 
+//gün geldı degısıklık yapılmak ıstendı nesnenın ctorundan tek bır yerde patlak verıcektır merkezıyetleştirmiş olduk 
 
 #region Abstract Product
 interface IProduct
