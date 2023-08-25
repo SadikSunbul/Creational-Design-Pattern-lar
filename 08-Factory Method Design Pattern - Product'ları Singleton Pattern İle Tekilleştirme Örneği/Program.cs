@@ -1,23 +1,16 @@
 ﻿
-
 //GarantiBank garantiBank = new("asd", "123");
-//garantiBank.ConnectGaranti(); //bu bir kuraldır bunu tetıklememiz lazım kullanabilmek için 
+//garantiBank.ConnectGaranti();
 
 
-//VakifBank vakifBank = new(
-//    new()
-//    {
-//        UserCode = "sadik",
-//        Mail = "sadik@sadiksunbul.com"
-//    },
-//    "123");
+//VakifBank vakifBank = new(new() { UserCode = "gncy", Mail = "gncy@gencayyildiz.com" }, "123");
 //bool result = vakifBank.ValidateCredential();
 //if (result)
 //{
 //    //...
 //}
 
-//HalkBank halkBank = new("sadik");
+//HalkBank halkBank = new("gncy");
 //halkBank.Password = "123";
 
 BankCreator bankCreator = new();
@@ -46,12 +39,18 @@ interface IBank
 class GarantiBank : IBank
 {
     string _userCode, _password;
-    public GarantiBank(string userCode, string password)
+    GarantiBank(string userCode, string password) //New engellendi
     {
         Console.WriteLine($"{nameof(GarantiBank)} nesnesi oluşturuldu.");
         _userCode = userCode;
         _password = password;
     }
+    static GarantiBank()
+        => _garantiBank = new("asd", "123");
+
+    static GarantiBank _garantiBank;
+    static public GarantiBank GetInstance => _garantiBank;
+
 
     public void ConnectGaranti()
         => Console.WriteLine($"{nameof(GarantiBank)} - Connected.");
@@ -62,11 +61,15 @@ class GarantiBank : IBank
 class HalkBank : IBank
 {
     string _userCode, _password;
-    public HalkBank(string userCode)
+    HalkBank(string userCode)
     {
         Console.WriteLine($"{nameof(HalkBank)} nesnesi oluşturuldu.");
         _userCode = userCode;
     }
+    static HalkBank()
+       => _halkBank = new("asd");
+    static HalkBank _halkBank;
+    static public HalkBank GetInstance => _halkBank;
 
     public string Password { set => _password = value; }
 
@@ -83,13 +86,19 @@ class VakifBank : IBank
 {
     string _userCode, _email, _password;
     public bool isAuthentcation { get; set; }
-    public VakifBank(CredentialVakifBank credential, string password)
+    VakifBank(CredentialVakifBank credential, string password)
     {
         Console.WriteLine($"{nameof(VakifBank)} nesnesi oluşturuldu.");
         _userCode = credential.UserCode;
         _email = credential.Mail;
         _password = password;
     }
+
+    static VakifBank()
+      => _vakifBank = new(new() { Mail = "sadik@sadiksunbul.com", UserCode = "sadik" }, "123");
+    static VakifBank _vakifBank;
+    static public VakifBank GetInstance => _vakifBank;
+
     public void ValidateCredential()
     {
         if (true) //validating
@@ -107,32 +116,46 @@ interface IBankFactory
     IBank CreateInstance();
 }
 #endregion
-
 #region Concrete Factories
-//Nesne üretimi + bu nesnelerin kullanılmasını sağlıycak işlemlerinin yapılmasını sağlar  
 class GarantiFactory : IBankFactory
 {
+    GarantiFactory() { }
+    static GarantiFactory()
+        => _garantiFactory = new();
+    static GarantiFactory _garantiFactory;
+    static public GarantiFactory GetInstance => _garantiFactory;
     public IBank CreateInstance()
     {
-        GarantiBank garanti = new("asd", "123");
-        garanti.ConnectGaranti(); //Connect olmdan işlem yapılamıycaktır o yuzden bunu yazdık burada bunu ıstıyen drekt kullansın diye yazdık 
+        GarantiBank garanti = GarantiBank.GetInstance;
+        garanti.ConnectGaranti();
         return garanti;
     }
 }
 class HalkBankFactory : IBankFactory
 {
+    HalkBankFactory() { } //new lemeyi engelledik
+    static HalkBankFactory()
+        => _halkBankFactory = new();
+    static HalkBankFactory _halkBankFactory;
+    static public HalkBankFactory GetInstance => _halkBankFactory;
+
     public IBank CreateInstance()
     {
-        HalkBank halkBank = new("asd");
+        HalkBank halkBank = HalkBank.GetInstance;
         halkBank.Password = "123";
         return halkBank;
     }
 }
 class VakifBankFactory : IBankFactory
 {
+    VakifBankFactory() { }
+    static VakifBankFactory()
+        => _vakifBankFactory = new();
+    static VakifBankFactory _vakifBankFactory;
+    static public VakifBankFactory GetInstance => _vakifBankFactory;
     public IBank CreateInstance()
     {
-        VakifBank vakifBank = new(new() { Mail = "sadik@sadiksunbul.com", UserCode = "sadik" }, "123");
+        VakifBank vakifBank = VakifBank.GetInstance;
         vakifBank.ValidateCredential();
         return vakifBank;
     }
@@ -150,9 +173,9 @@ class BankCreator
     {
         IBankFactory _bankFactory = bankType switch
         {
-            BankType.Vakifbank => new VakifBankFactory(),
-            BankType.Halkbank => new HalkBankFactory(),
-            BankType.Garanti => new GarantiFactory()
+            BankType.Vakifbank => VakifBankFactory.GetInstance,
+            BankType.Halkbank => HalkBankFactory.GetInstance,
+            BankType.Garanti => GarantiFactory.GetInstance
         };
 
         return _bankFactory.CreateInstance();
