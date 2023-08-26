@@ -14,7 +14,7 @@
 #endregion
 
 ComputerCreater creater = new();
-Computer asus = creater.CreateComputer(new AsusFactory());//asus ıle ılgılı nesneyı uretmıs olucaz 
+Computer asus = creater.CreateComputer(ComputerType.Asus);//asus ıle ılgılı nesneyı uretmıs olucaz 
 
 
 class Computer
@@ -102,13 +102,28 @@ class MSIFactory : IComputerFactory
 #endregion
 
 #region Creator
+enum ComputerType
+{
+    Asus,
+    MSI,
+    Toshiba
+}
 class ComputerCreater
 {
     ICPU _cpu;
     IRAM _rAM;
     IVideoCard _videoCard;
-    public Computer CreateComputer(IComputerFactory computerFactory)
+    public Computer CreateComputer(ComputerType computerType)
     {//asus verırsek asusun parcalarını uretirir
+
+        //Burada Factory uygulandı burada factory methot da kullanılabılır 
+        IComputerFactory computerFactory = computerType switch //Burada newlemeyi aldık artık newleme işlemi burada olucaktır
+        {
+            ComputerType.MSI => new MSIFactory(),
+            ComputerType.Toshiba => new ToshibaFactory(),
+            ComputerType.Asus => new AsusFactory()
+        };
+
         _cpu = computerFactory.CreateCPU();
         _rAM = computerFactory.CreateRAM();
         _videoCard = computerFactory.CreateVideoCard();

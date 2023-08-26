@@ -166,7 +166,8 @@ class BankCreator
         //otomatik leti burası
         string factory = $"{bankType.ToString()}Factory";//ismi aldık sonuna ekelem yaptık 
         Type? type = Assembly.GetExecutingAssembly().GetType(factory); //bu tipi bulduk geldik
-        IBankFactory? bankFactory = Activator.CreateInstance(type) as IBankFactory;//bu tipte bir nesne üretirdik
+        IBankFactory? bankFactory = Activator.CreateInstance(type) as IBankFactory;//bu tipte bir nesne üretirdik 
+        //burada IBankFactory ya dönüştürmrmiz bir standart olsun diye yaptık yani bu interfaceden kalıtılanalrın hepsınde CreateInstance var o yuzden 
         return bankFactory.CreateInstance();//bu nesnenin metodunu çağırdık
     }
 }
