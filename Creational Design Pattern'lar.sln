@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11-AFDP- Factory Method Pat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12-Abstract Factory Design Pattern - 1.Örneklendirme", "12-Abstract Factory Design Pattern - 1.Örneklendirme\12-Abstract Factory Design Pattern - 1.Örneklendirme.csproj", "{4AD4FCDD-4110-47DC-9182-09F20BAFAFEA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13-Abstract Factory Design Pattern - 2.Örneklendirme", "13-Abstract Factory Design Pattern - 2.Örneklendirme\13-Abstract Factory Design Pattern - 2.Örneklendirme.csproj", "{7AA029DF-C0FC-4CE3-9ABF-63ADEFDBCB8F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{4AD4FCDD-4110-47DC-9182-09F20BAFAFEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4AD4FCDD-4110-47DC-9182-09F20BAFAFEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4AD4FCDD-4110-47DC-9182-09F20BAFAFEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AA029DF-C0FC-4CE3-9ABF-63ADEFDBCB8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AA029DF-C0FC-4CE3-9ABF-63ADEFDBCB8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AA029DF-C0FC-4CE3-9ABF-63ADEFDBCB8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AA029DF-C0FC-4CE3-9ABF-63ADEFDBCB8F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
