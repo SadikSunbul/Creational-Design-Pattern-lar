@@ -3,7 +3,7 @@ Person person1 = new("Sadık", "Sünbül", Department.C, 100, 10);
 //Person person2 = new("Ahmet", "Sünbül", Department.C, 100, 10);
 
 
-Person person2 = person1.Clone();
+Person person2 = person1.Clone(); //Ctor tetiklenmez arkada yeniden new operatoru yapmaz
 person2.Name = "Ahmet";
 
 Console.WriteLine();
@@ -35,6 +35,7 @@ class Person : IPersonCloneable
 
     public Person Clone()
     {
+        //Objecten gelen bir member var ordan klonlama ıslemı yapabılırız objecten geldiği için bunu cast veya as etmek gerekir
         return (Person)base.MemberwiseClone();
     }
 }
