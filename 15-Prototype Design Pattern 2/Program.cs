@@ -1,7 +1,10 @@
 ﻿
 Person person1 = new("Sadık", "Sümbül", Department.A, 2500, 500);
 
+//Digerinden farkı object donuyor bu hazır sınıf bunu cast yada as yapmak gerekir
+
 //Person person2 = (Person)person1.Clone();
+
 Person? person2 = person1.Clone() as Person;//Ctor tetiklenmez arkada yeniden new operatoru yapmaz
 person2.Name = "Ahmet";
 person2.Salary = 1000;
