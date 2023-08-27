@@ -35,6 +35,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "15-Prototype Design Pattern
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "16-Object Pool Design Pattern", "16-Object Pool Design Pattern\16-Object Pool Design Pattern.csproj", "{A720939D-0378-4706-8950-7E8A0C267398}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "17-ObjectPool Nesnesini Singleton Olarak Tasarlama", "17-ObjectPool Nesnesini Singleton Olarak Tasarlama\17-ObjectPool Nesnesini Singleton Olarak Tasarlama.csproj", "{CCEAB920-97D9-46C2-B33A-1E5F20680727}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "18-Object Pool Design Pattern - Asenkron Süreçlerde Örneklendirme", "18-Object Pool Design Pattern - Asenkron Süreçlerde Örneklendirme\18-Object Pool Design Pattern - Asenkron Süreçlerde Örneklendirme.csproj", "{3E811225-8D76-40D0-8EF1-32B79AFEFF5B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -105,6 +109,14 @@ Global
 		{A720939D-0378-4706-8950-7E8A0C267398}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A720939D-0378-4706-8950-7E8A0C267398}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A720939D-0378-4706-8950-7E8A0C267398}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCEAB920-97D9-46C2-B33A-1E5F20680727}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCEAB920-97D9-46C2-B33A-1E5F20680727}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCEAB920-97D9-46C2-B33A-1E5F20680727}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCEAB920-97D9-46C2-B33A-1E5F20680727}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E811225-8D76-40D0-8EF1-32B79AFEFF5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E811225-8D76-40D0-8EF1-32B79AFEFF5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E811225-8D76-40D0-8EF1-32B79AFEFF5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E811225-8D76-40D0-8EF1-32B79AFEFF5B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
