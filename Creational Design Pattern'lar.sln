@@ -43,7 +43,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "19-OPDP-Microsoft Extension
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "20-Object Pool Design Pattern  - Asp.NET Core'da Örneklendirme", "20-Object Pool Design Pattern  - Asp.NET Core'da Örneklendirme\20-Object Pool Design Pattern  - Asp.NET Core'da Örneklendirme.csproj", "{8EBA69D1-15BF-4B29-8CB1-C3F4DDDC7643}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "21-Builder Design Pattern Pratik1", "21-Builder Design Pattern Pratik1\21-Builder Design Pattern Pratik1.csproj", "{DDE4657A-D9D0-44C7-8690-E4B5E45E7E76}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "21-Builder Design Pattern Pratik1", "21-Builder Design Pattern Pratik1\21-Builder Design Pattern Pratik1.csproj", "{DDE4657A-D9D0-44C7-8690-E4B5E45E7E76}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "22-BDP  - Factory Method Pattern İle Conrete Builder'ları Üretme", "22-BDP  - Factory Method Pattern İle Conrete Builder'ları Üretme\22-BDP  - Factory Method Pattern İle Conrete Builder'ları Üretme.csproj", "{FD9CE658-1BF4-45B2-B1F6-95BE3E4E6184}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -135,6 +137,10 @@ Global
 		{DDE4657A-D9D0-44C7-8690-E4B5E45E7E76}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DDE4657A-D9D0-44C7-8690-E4B5E45E7E76}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DDE4657A-D9D0-44C7-8690-E4B5E45E7E76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD9CE658-1BF4-45B2-B1F6-95BE3E4E6184}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD9CE658-1BF4-45B2-B1F6-95BE3E4E6184}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD9CE658-1BF4-45B2-B1F6-95BE3E4E6184}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD9CE658-1BF4-45B2-B1F6-95BE3E4E6184}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
