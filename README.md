@@ -1,4 +1,4 @@
-# Creational-Design-Pattern-lar
+# Creational-Design-Pattern
 
 - [x] Singleton Design Pattern
 - [x] Multion Design Pattern
